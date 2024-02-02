@@ -1,0 +1,62 @@
+Welcome to the Simple Calculator!
+Enter the first number:12
+
+Enter the second number:12
+
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter the operation number:
+1
+
+Result:12 + 12 = 24
+Do you want to perform another calculation? (yes/no):
+yes
+Enter the first number:12
+
+Enter the second number:12
+
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter the operation number:
+2
+
+Result:12 - 12 = 0
+Do you want to perform another calculation? (yes/no):
+yes
+Enter the first number:12
+
+Enter the second number:12
+
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter the operation number:
+3
+
+Result:12 * 12 = 144
+Do you want to perform another calculation? (yes/no):
+yes
+Enter the first number:12
+
+Enter the second number:12
+
+Select an operation:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter the operation number:
+4
+
+Result:12 / 12 = 1
+Do you want to perform another calculation? (yes/no):
+no
+Goodbye!
