@@ -2,7 +2,6 @@ package simple_calculator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
 public class Calculator {
 	public static void main(String[] args) {
 		System.out.println("Welcome to the Simple Calculator!"); 
@@ -10,10 +9,10 @@ public class Calculator {
 		
 		while (true) {
 			System.out.print("Enter the first number:");
-			Integer firstNumber;
+			float firstNumber;
 			
 			try{
-			firstNumber = scanner.nextInt();
+			firstNumber = scanner.nextFloat();
 			}catch(InputMismatchException e){
 				System.out.println("Error: You have entered an invalid Value, Please try again."); 
 				scanner.nextLine();
@@ -23,10 +22,10 @@ public class Calculator {
 			System.out.println(""); 
 			
 			System.out.print("Enter the second number:");
-			Integer secondNumber; 
+			float secondNumber; 
 			
 			try {
-			secondNumber = scanner.nextInt();
+			secondNumber = scanner.nextFloat();
 			}catch(InputMismatchException e){
 				System.out.println("Error: You have entered an invalid Value, Please try again."); 
 				scanner.nextLine();
@@ -45,7 +44,7 @@ public class Calculator {
 
 			System.out.println("Enter the operation number:"); 
 			
-			Integer operator = 0;
+			int operator = 0;
 			
 			try {		
 				operator = scanner.nextInt();
@@ -54,7 +53,7 @@ public class Calculator {
 				scanner.nextLine();
 				continue; 
 			}
-			Integer result = 0; 
+			float result = 0; 
 			
 			if(operator == 1) {
 				result = firstNumber + secondNumber; 
@@ -72,6 +71,22 @@ public class Calculator {
 			
 			
 			else if(operator == 4) {
+	
+				
+				while(secondNumber == 0)
+				{
+						System.out.println("Remember, you can not divid by 0, please enter a new number");
+					
+					try {
+						secondNumber = scanner.nextFloat();
+						}catch(InputMismatchException e){
+							System.out.println("Error: You have entered an invalid Value, Please try again."); 
+							scanner.nextLine();
+
+							continue; 
+						}
+
+				}
 				result = firstNumber / secondNumber; 
 			}else {
 				System.out.println("You have entered an invalid operator, please try again!");
@@ -119,9 +134,4 @@ public class Calculator {
 		
 		System.out.println("Goodbye!");
 	}
-	
-	
-	
 }
-
-
