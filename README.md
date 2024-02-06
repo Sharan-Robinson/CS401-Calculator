@@ -1,4 +1,4 @@
-# **Simple Calculator - ReadMe**
+# **Simple Calculator**
 
 ## **Description**
 The Simple Calculator is a console-based program that performs the basic arithmetic operations. A structured menu prompts the user to enter two numbers, select an operation, perform the selected calculation, and display the result. The program will continue to display the menu until the user chooses to exit the program. Once prompted to exit, the program will end. The program was coded in Java using the Eclipse IDE.
